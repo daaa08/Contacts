@@ -52,7 +52,7 @@ public class CheckPermissionActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if(requestCode == REQ_PERMISSION){
-            // 3.1 사용ㅈ가 승인
+            // 3.1 사용자가 승인
             if(grantResults[0] == PackageManager.PERMISSION_GRANTED){
                 run();
                 // 3.2 사용자가 승인을 거절
